@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
+  "lint-staged": {
+    "*.{cjs,prettierrc,json,js,ts,css,html,svelte}": "npm run format"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira"
+    }
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "commit": "cz",
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "preview": "turbo run preview --parallel",
+    "lint": "turbo run lint --parallel",
+    "format": "prettier --write .",
+    "check": "turbo run check",
+    "test": "turbo run test --parallel",
+    "test:watch": "turbo run test:watch --parallel"
+  },
+  "devDependencies": {
+    "@digitalroute/cz-conventional-changelog-for-jira": "^6.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "commitizen": "^4.2.5",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.12",
+    "turbo": "latest"
+  }
+}
