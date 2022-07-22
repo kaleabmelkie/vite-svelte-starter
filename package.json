@@ -20,8 +20,7 @@
     "lint": "turbo run lint --parallel",
     "format": "prettier --write .",
     "check": "turbo run check",
-    "test": "turbo run test --parallel",
-    "test:watch": "turbo run test:watch --parallel"
+    "test": "turbo run test --parallel"
   },
   "devDependencies": {
     "@digitalroute/cz-conventional-changelog-for-jira": "^6.7.0",

@@ -20,9 +20,7 @@
       "outputs": []
     },
     "test": {
-      "outputs": []
-    },
-    "test:watch": {
+      "cache": false,
       "outputs": []
     }
   }
