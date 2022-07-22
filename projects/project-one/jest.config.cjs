@@ -1,14 +1,20 @@
 module.exports = {
   transform: {
     '^.+\\.svelte$': [
-      'svelte-jester',
+      '../../node_modules/svelte-jester/dist/transformer.mjs',
       {
         preprocess: './svelte.config.js'
       }
     ],
     '^.+\\.ts$': 'ts-jest',
-    '^.+\\.js$': 'ts-jest'
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|svg)$':
+      'jest-transform-stub'
   },
   moduleFileExtensions: ['js', 'ts', 'svelte'],
-  setupFilesAfterEnv: ['./jest-setup.ts']
+  extensionsToTreatAsEsm: ['.ts', '.svelte'],
+  globals: {
+    'ts-jest': {
+      useESM: true
+    }
+  }
 };
