@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "✨ ROOT",
+      "path": "."
+    },
+    {
+      "name": "project-one",
+      "path": "projects/project-one"
+    },
+    {
+      "name": "project-two",
+      "path": "projects/project-two"
+    },
+    {
+      "name": "shared",
+      "path": "projects/shared"
+    }
+  ],
+  "settings": {}
+}
