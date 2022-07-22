@@ -20,8 +20,7 @@
       "outputs": []
     },
     "test": {
-      "cache": false,
-      "outputs": []
+      "cache": false
     }
   }
 }
